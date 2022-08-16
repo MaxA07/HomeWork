@@ -8,4 +8,9 @@
     <string name="madagascar">Madagascar</string>
     <string name="thailand">Thailand</string>
     <string name="denmark">Denmark</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nextScreenButton">Go to random Image</string>
+    <string name="get_random_image">Get Random Image</string>
+    <string name="set_text">Enter Text</string>
+    <string name="user_keyword">User keyword</string>
 </resources>
