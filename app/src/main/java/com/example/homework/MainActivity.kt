@@ -2,14 +2,22 @@ package com.example.homework
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.homework.databinding.ActivityMainBinding
+import com.example.homework.screens.ContactsListFragment
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.mainScreen, FlagsFragment.newInstance())
+            .add(R.id.mainScreen, ContactsListFragment.newInstance())
             .commit()
+
+
     }
 }
