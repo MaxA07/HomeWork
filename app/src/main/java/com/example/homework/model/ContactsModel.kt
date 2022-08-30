@@ -10,7 +10,8 @@ class ContactsModel {
         val faker = Faker.instance()
         contacts = (1..100).map { Contact(
             name = faker.name().name(),
-            phone = faker.phoneNumber().phoneNumber().toString()
+            phone = faker.phoneNumber().phoneNumber().toString(),
+            photo = ""
         ) }.toMutableList()
         return contacts
     }
