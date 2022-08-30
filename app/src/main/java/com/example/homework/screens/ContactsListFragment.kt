@@ -5,18 +5,34 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.homework.ContactsAdapter
 import com.example.homework.R
+import com.example.homework.databinding.ContactItemBinding
+import com.example.homework.databinding.FragmentContacrsListBinding
 
 class ContactsListFragment : Fragment() {
 
+    lateinit var binding: FragmentContacrsListBinding
+    private val adapter by lazy { ContactsAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contacrs_list, container, false)
+        binding = FragmentContacrsListBinding.inflate(inflater, container, false)
+
+        setupRecyclerView()
+
+        return binding.root
     }
+
+    private fun setupRecyclerView() {
+        binding.recyclerView.adapter = adapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+
+        }
 
     companion object {
 

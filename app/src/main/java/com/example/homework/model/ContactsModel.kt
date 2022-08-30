@@ -6,12 +6,12 @@ class ContactsModel {
 
     private var contacts = mutableListOf<Contact>()
 
-    fun loadContacts() {
+    fun loadContacts(): MutableList<Contact> {
         val faker = Faker.instance()
         contacts = (1..100).map { Contact(
-            id = it.toLong(),
             name = faker.name().name(),
             phone = faker.phoneNumber().phoneNumber().toString()
         ) }.toMutableList()
+        return contacts
     }
 }
