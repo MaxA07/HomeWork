@@ -10,7 +10,7 @@ import com.example.homework.model.Contact
 import com.example.homework.model.ContactsModel
 import kotlinx.coroutines.channels.ticker
 
-class ContactsAdapter: RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
+class ContactsAdapter(private val onItemClick: OnItemClick): RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>() {
     val contact = ContactsModel()
     var contactList: List<Contact> = contact.loadContacts()
         set(newValue) {
@@ -32,6 +32,9 @@ class ContactsAdapter: RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder>(
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
         holder.binding.name.text = contactList[position].name
         holder.binding.phoneNumber.text = contactList[position].phone
+        holder.itemView.setOnClickListener {
+            onItemClick.onItemClicked(position)
+        }
 
 
         with(holder.binding) {

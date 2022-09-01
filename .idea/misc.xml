@@ -5,13 +5,11 @@
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/drawable/image.xml" value="0.232" />
         <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/activity_main.xml" value="0.35885416666666664" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/contact_item.xml" value="0.35885416666666664" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/fragment_clock.xml" value="0.35885416666666664" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/fragment_contacrs_list.xml" value="0.34479166666666666" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/fragment_contact_list.xml" value="0.35885416666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/fragment_flags.xml" value="0.35885416666666664" />
         <entry key="..\:/Users/user/AndroidStudioProjects/HomeWork/app/src/main/res/layout/fragment_random_image.xml" value="0.34479166666666666" />
         <entry key="..\:/apps/HomeWork/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
+        <entry key="..\:/apps/HomeWork/app/src/main/res/layout/fragment_contacrs_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/apps/HomeWork/app/src/main/res/layout/fragment_contact_details.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

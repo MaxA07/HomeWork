@@ -2,6 +2,7 @@ package com.example.homework.model
 
 import com.github.javafaker.Faker
 
+
 class ContactsModel {
 
     private var contacts = mutableListOf<Contact>()
